@@ -1,0 +1,275 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"
+<head>
+    <meta charset="utf-8" />
+    <title>Ch 2-3 ITP.175</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            background-color: #cfbade;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            font-weight: normal;
+            margin: 1rem 0 0.5rem;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+            h1:first-of-type {
+                font-size: 2.5rem;
+                color: #2c3e50;
+            }
+
+            h1:nth-of-type(2) {
+                font-size: 2rem;
+                color: #2980b9;
+            }
+
+            h2:first-of-type {
+                font-size: 1.5rem;
+                color: #c0392b;
+            }
+
+            h2:nth-of-type(2) {
+                font-size: 1.25rem;
+                color: #e67e22;
+            }
+
+        ol {
+            list-style: decimal;
+            margin: 2rem 0;
+            padding: 0;
+        }
+
+            ol > li {
+                margin: 1.5rem 0;
+                padding-left: 1.5rem;
+                font-size: 1.1rem;
+                color: #333;
+            }
+
+                ol > li:first-of-type {
+                    font-size: 1.2rem;
+                    color: #2c3e50;
+                    margin-top: 0;
+                }
+
+                ol > li > ol {
+                    list-style: lower-alpha;
+                    margin-top: 0.5rem;
+                    margin-bottom: 0.5rem;
+                    padding-left: 1rem;
+                }
+
+        strong {
+            color: #e74c3c;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Chapter 2: Algorithm Discovery and Design</h1>
+    <h1>Chapter 3: The efficiency of Algorithms</h1>
+    <h2>Student: CARDINALE</h2>
+    <h2>Chapter 2: Algorithms</h2>
+    <ol>
+        <li>
+            Explain why natural language is not an effective tool for describing algorithms<br>
+            Natural language is not an effective tool for describing algorithms because it lacks the precision and clarity required to convey the specific
+            steps and logic involved in an algorithm. Natural language is subjective and can be ambiguous, open to interpretation, and can lead to
+            miscommunication between the person describing the algorithm and the person trying to understand it.
+        </li>
+        <li>
+            Problem 1:<br>
+            A student has three grades; their final grade is the average of the three. List the algorithmic steps to find the final grade.
+            <ol type="1">
+                <li>Set the variable "grade1" to the first grade.</li>
+                <li>Set the variable "grade2" to the second grade.</li>
+                <li>Set the variable "grade3" to the third grade.</li>
+                <li>Calculate the sum of the three grades by adding "grade1", "grade2", and "grade3" together and store the result in a variable called "sum".</li>
+                <li>Calculate the average grade by dividing "sum" by 3 and store the result in a variable called "finalGrade".</li>
+                <li>Output the value of "finalGrade".</li>
+            </ol>
+        </li>
+        <li>
+            Problem 2:<br>
+            A car owner recorded the car's previous car mileage, current mileage, and the number of gallons of gas the owner filled their tank with.
+            List the algorithmic steps to find the car's mpg (miles per gallon).
+            <ol type="1">
+                <li>
+                    Subtract the previous car mileage from the current car mileage to find the number of miles driven.
+                </li>
+                <li>
+                    Divide the number of miles driven by the number of gallons of gas used to fill the tank to find the car's miles per gallon (MPG).
+                </li>
+                <li>
+                    Round the MPG to the desired number of decimal places.
+                </li>
+            </ol>
+        </li>
+    </ol>
+    <h2>Chapter 2: Briefly define</h2>
+    <ol>
+        <li>
+            <strong>Natural language:</strong> A human language used for communication between people, such as English, Spanish, or Chinese.
+        </li>
+        <li>
+            <strong>Pseudocode:</strong> A high-level, informal programming language that allows programmers to describe the steps of an algorithm using
+            a mixture of natural language and programming language constructs.
+        </li>
+        <li>
+            <strong>Sequential operation (straight-line algorithm):</strong> An algorithm that executes each step in sequence, without any branching or looping.
+        </li>
+        <li>
+            <strong>Input:</strong> Data or information that is provided to an algorithm or program, typically by a user or another program.
+        </li>
+        <li>
+            <strong>Output:</strong> The result or data produced by an algorithm or program after processing input data.
+        </li>
+        <li>
+            <strong>Conditional statement:</strong> A programming construct that allows an algorithm to execute different sets of instructions based on the
+            evaluation of a boolean condition. In other words, a conditional statement allows an algorithm to make decisions based on the value of a specific
+            variable or condition.
+        </li>
+        <li>
+            <strong>Boolean condition:</strong> A type of condition that can have only one of two possible values, typically true or false, which is used in
+            conditional statements to control program flow.
+        </li>
+        <li>
+            <strong>Algorithmic discovery process:</strong> The process of developing an algorithm, which involves designing a step-by-step plan to solve a problem,
+            testing the plan for errors, and refining the plan until it produces the desired results. The algorithmic discovery process can be iterative and may involve
+            several rounds of testing and refinement.
+        </li>
+    </ol>
+    <h2>Chapter 3: Briefly describe or define:</h2>
+    <ol>
+        <li>
+            why algorithms should be correct: Algorithms should be correct to ensure that they produce the expected output for all possible inputs. This is important
+            in critical applications such as medicine, aviation, and finance where errors can have serious consequences.
+        </li>
+        <li>
+            why algorithms should be efficiant: Algorithms should be efficient to ensure that they can handle large input sizes and run in a reasonable amount of time.
+            This is important for applications such as big data analysis and machine learning, where processing large amounts of data is necessary.
+        </li>
+        <li>
+            program maintenance: Program maintenance involves making changes to an existing program to fix errors, add new features, or improve performance. This is an
+            important aspect of software development as programs are never static and must evolve over time.
+        </li>
+        <li>
+            importance of algorithm: ease of understanding: The importance of algorithm ease of understanding is to make it easier for others to read and understand the
+            algorithm. This helps in collaboration and maintenance of the algorithm.
+        </li>
+        <li>
+            algorithmic elegance: Algorithmic elegance refers to the quality of an algorithm that makes it easy to understand, concise, and efficient. An elegant algorithm
+            is simple, clear, and efficient, making it easier to maintain and debug.
+        </li>
+        <li>
+            sequential search algorithm: The sequential search algorithm is a simple algorithm that searches for a specific item in a list by checking each item one by one
+            until the target item is found or the end of the list is reached.
+        </li>
+        <li>
+            order of magnitude: Order of magnitude is a way to measure the scale of a value or quantity in terms of powers of ten.
+        </li>
+        <li>
+            selection sort: Selection sort is a simple sorting algorithm that works by selecting the smallest element from an unsorted list and swapping it with the first
+            element. It then repeats this process for the remaining unsorted portion of the list until the entire list is sorted.
+        </li>
+        <li>
+            flop (floating point operation): A floating point operation (FLOP) is an arithmetic operation that involves real numbers. It is an important measure of the
+            processing power of a computer.
+        </li>
+        <li>
+            teraflop: Teraflop is a measure of computing speed equal to one trillion floating-point operations per second.
+        </li>
+        <li>
+            petaflop: Petaflop is a measure of computing speed equal to one quadrillion floating-point operations per second.
+        </li>
+        <li>
+            parallel processor: A parallel processor is a type of computer architecture that allows multiple processors to work together to solve a problem. This can
+            significantly improve processing speed and is used in applications such as scientific simulations and weather forecasting.
+        </li>
+        <li>
+            data cleanup problem: The data cleanup problem involves identifying and correcting errors and inconsistencies in large datasets. This is an important step
+            in data analysis as errors in data can lead to incorrect conclusions.
+        </li>
+        <li>
+            binary search algorithm: The binary search algorithm is a search algorithm that works by repeatedly dividing a sorted list in half and eliminating the half
+            that cannot contain the target item.
+        </li>
+        <li>
+            pattern matching: Pattern matching is the process of searching for a specific pattern in a sequence of data. It is used in applications such as text
+            search and image recognition.
+        </li>
+    </ol>
+    <h2>Karl Friederich Gauss</h2>
+    <h3>1. Karl Friederich Gauss' mathematical abilities and scientific achievements</h3>
+    <p>
+        Karl Friedrich Gauss (1777-1855) was a German mathematician and physicist who made significant
+        contributions to many areas of mathematics and science. He is widely regarded as one of the
+        greatest mathematicians of all time, often referred to as the "Prince of Mathematicians."
+    </p>
+    <p>
+        Gauss made important contributions to number theory, geometry, statistics, and algebra.
+        He is best known for his work in number theory, including his discovery of the prime number
+        theorem, the law of quadratic reciprocity, and his work on modular arithmetic. In geometry,
+        he developed non-Euclidean geometry and made significant contributions to the study of curvature.
+        He also developed the method of least squares in statistics and made important contributions
+        to the theory of algebraic equations.
+    </p>
+    <p>
+        Gauss was also a brilliant physicist, making significant contributions to the study of
+        electricity and magnetism, optics, and astronomy. He discovered the law of magnetic force,
+        developed the Gaussian surface theorem in electrostatics, and developed the theory of the
+        Earth's magnetic field. He also made important contributions to the study of optics,
+        including the Gaussian lens formula.
+    </p>
+    <p><a href="https://www.britannica.com/biography/Carl-Friedrich-Gauss">Source</a></p>
+    <h3>2. Karl Friederich Gauss' algorithm for adding up the numbers from 1 to 100</h3>
+    <p>
+        Karl Friedrich Gauss' algorithm for adding up the numbers from 1 to 100 is based on the
+        principle of pairing the numbers in a specific way. The algorithm goes as follows:
+    </p>
+    <ol>
+        <li>Write down the numbers from 1 to 100 in two rows, with 50 numbers in each row.</li>
+        <li>Add the numbers in each row together. The sum of the first row is 1 + 2 + ... + 50, which can be calculated using the formula n(n+1)/2, where n is the last number in the series (50 in this case). Therefore, the sum of the first row is 50(50+1)/2 = 1275. The sum of the second row is also 1275.</li>
+        <li>Add the sums of the two rows together. The sum of the numbers from 1 to 100 is thus 1275 + 1275 = 2550.</li>
+    </ol>
+    <p>
+        This algorithm is based on the idea of pairing the numbers in a way that simplifies
+        the calculation. By pairing the first and last numbers, then the second and second-to-last
+        numbers, and so on, we end up with 50 pairs of numbers that each add up to 101. Therefore,
+        the sum of the numbers from 1 to 100 can be calculated as 50 × 101 = 5050/2 = 2550.
+    </p>
+    <p><a href="https://en.wikipedia.org/wiki/Carl_Friedrich_Gauss#Mathematical_work">Source</a></p>
+
+    <h1>3. What is gaussian optics?</h1>
+    <p>
+        Gaussian optics is a field of optics that uses Gaussian beam analysis to understand
+        the propagation of light through optical systems. It was first introduced by the German
+        mathematician and physicist Karl Friedrich Gauss in the early 19th century. The Gaussian
+        beam is a beam of light whose intensity and phase distribution can be described by a
+        Gaussian function. This function is used to model the beam as it propagates through various
+        optical elements such as lenses, mirrors, and prisms.
+    </p>
+    <p><a href="https://www.britannica.com/science/Gaussian-optics">Source</a></p>
+    <h3>4. What is "gaussian blur" and how is it used in digital image editing?</h3>
+    <p>
+        Gaussian blur is a common image processing technique used to smooth out an image by
+        reducing noise and detail. It is often used to improve the appearance of photos or to
+        remove unwanted details from an image.
+    </p>
+
+    <p><a href="https://www.datacamp.com/community/tutorials/image-processing-python#gaussian.">source</a>
+     <div> 
+        <h4> Gaussian blur: </h4>       
+		<img src="blurbf.jpg" alt="Before, stock photo by inspired images"" width="400" height="300">  Before
+		<img src="bluraf.jpg" alt="After" width="400" height="300"> After
+	</div>
+</body>
+</html>
