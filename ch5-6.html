@@ -1,0 +1,232 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Chapter 5: Computer Systems Organization</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #6d6875;
+            background-color: #e5989b;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #945360;
+            color: #f2cfbf;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: #ffb4a2;
+        }
+
+        ol {
+            list-style: decimal;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #b5838d;
+            color: #fad9c8;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+       
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #888;
+        }
+
+        ol ol {
+            list-style: lower-alpha;
+            margin-left: 2rem;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: #5c374c;
+            color: #f2cfbf;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #985277;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #ce6a85;
+        }
+
+        tr:hover {
+            background-color: #faa275;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Chapter 5: Computer Systems Organization</h1>
+    <h2>Student: CARDINALE</h2>
+    <h3>Von Neumann computer architecture, 4 major subsystems:</h3>
+    <ol>
+        <li>Central Processing Unit (CPU): The CPU is the heart of the computer and performs all arithmetic and logic operations. It also fetches instructions from memory, decodes them, and executes them.</li>
+        <li>Memory Unit: The memory unit stores both data and instructions that are currently being executed by the CPU. It is divided into two types of memory: primary memory (also called main memory) and secondary memory (such as hard drives and solid-state drives).</li>
+        <li>Input/Output (I/O) Unit: The I/O unit handles all communication between the computer and its external devices, such as keyboards, mice, displays, printers, and network interfaces.</li>
+        <li>System Bus: The system bus is the communication pathway between the CPU, memory, and I/O units. It is used to transfer data, instructions, and control signals between these components.</li>
+    </ol>
+    <h3>Von Neumann computer architecture, 3 characteristics:</h3>
+    <ol>
+        <li>Stored Program Concept: In the Von Neumann architecture, both instructions and data are stored in the same memory space. This means that instructions can be treated as data and manipulated by the CPU. This concept allows the computer to be programmed to perform different tasks and enables the computer to be versatile.</li>
+        <li>Sequential Execution: The Von Neumann architecture executes instructions sequentially, meaning that each instruction is executed one after the other in the order in which they are stored in memory. The CPU fetches an instruction from memory, decodes it, and then executes it before moving on to the next instruction. This sequential execution of instructions is also known as the fetch-decode-execute cycle.</li>
+        <li>Single Control Unit: The Von Neumann architecture has a single control unit that is responsible for coordinating and controlling the flow of data and instructions between the different subsystems of the computer. The control unit is responsible for fetching instructions from memory, decoding them, and executing them in the correct sequence. This simplifies the design of the computer and makes it easier to understand and program.</li>
+    </ol>
+    <h3>Computer Architecture Terms</h3>
+    <ol>
+        <li><strong>RAM:</strong> A computer memory that is used to temporarily store data and instructions that are being actively used by the CPU.</li>
+        <li><strong>Cache:</strong> A type of high-speed memory that is used to temporarily store frequently accessed data or instructions.</li>
+        <li>
+            <strong>Principal of locality:</strong> The high likelihood that when a program fetches a piece of data or an instruction:
+            <ol>
+                <li><strong>Temporal Locality:</strong> This sub-principle states that data or instructions that have been accessed recently are likely to be accessed again in the near future. For example, a loop in a program will often access the same data or instructions repeatedly, so the CPU can store this data or instruction in a cache to speed up subsequent accesses.</li>
+                <li><strong>Spatial Locality:</strong> This sub-principle states that data or instructions that are located near each other in memory are likely to be accessed together. For example, an array in a program will often access adjacent elements in the array, so the CPU can prefetch these elements into a cache to speed up subsequent accesses.</li>
+            </ol>
+        </li>
+        <li><strong>ROM:</strong> A type of computer memory that is used to store data or instructions that cannot be changed or modified once they have been programmed into the memory.</li>
+        <li><strong>Memory cell size:</strong> The memory cell size refers to the amount of data that can be stored in a single memory cell in a computer's memory.</li>
+        <li><strong>Memory cell address:</strong> A unique identifier assigned to each memory cell in a computer's memory.</li>
+        <li><strong>Maximum memory size:</strong> The largest amount of memory that a computer system can support.</li>
+        <li><strong>Register:</strong> A small amount of high-speed memory that is located within the CPU.</li>
+        <li><strong>Fetch:</strong> The process by which the CPU retrieves an instruction from memory and loads it into a register for execution.</li>
+        <li><strong>Store:</strong> The process by which the CPU saves data or instructions back to memory.</li>
+        <li><strong>Memory access time:</strong> The amount of time it takes for the CPU to retrieve data or instructions from memory.</li>
+        <li><strong>DASD:</strong> DASD stands for Direct Access Storage Device, which is a type of computer storage device that allows for random access to data stored on a magnetic or optical disk.</li>
+        <li><strong>Arithmetic and Logic Unit (ALU):</strong> A component of the CPU that is responsible for performing arithmetic and logical operations.</li>
+        <li><strong>Control Unit:</strong> A component of the CPU that is responsible for controlling the flow of data and instructions within the computer.</li>
+    </ol>
+    <h2>Chapter 6:</h2>
+    <h3>Four things the interface between the computer and the hardware does:</h3>
+    <ol>
+        <li>Facilitates communication between the software running on the computer and the hardware components.</li>
+        <li>Translates the instructions and commands issued by the software into machine-readable language that the hardware can understand and execute.</li>
+        <li>Manages and allocates system resources, such as CPU time, memory, and input/output operations, to ensure efficient and optimal performance of the system.</li>
+        <li>Provides a user interface for users to interact with the computer system and control its behavior through input devices.</li>
+    </ol>
+    <h3>Responsibilities of System Software:</h3>
+    <ol>
+        <li>Managing and controlling hardware resources.</li>
+        <li>Providing a platform and environment for application software to run.</li>
+        <li>Managing system resources such as memory, CPU, and file systems to optimize system performance and ensure stability.</li>
+        <li>Ensuring security and protection of the system by providing mechanisms for access control, user authentication, and data encryption.</li>
+    </ol>
+    <h3>System Software Terms:</h3>
+    <ol>
+        <li><strong>System software:</strong> Software designed to provide a platform and environment for application software to run, manage and control hardware resources, optimize system performance, and ensure security and stability of the system.</li>
+        <li><strong>User interface:</strong> The part of a software or system that allows users to interact with and control its behavior.</li>
+        <li><strong>Language services:</strong> Software components or tools that enable the development and execution of software programs written in specific programming languages.</li>
+        <li><strong>Memory managers:</strong> Software components that manage the allocation and deallocation of memory resources in a computer system.</li>
+        <li><strong>Information managers: </strong>Software components that manage the storage and retrieval of data and information in a computer system.</li>
+        <li><strong>I/O managers:</strong> Software components that manage the input and output operations of a computer system.</li>
+        <li><strong>Schedulers: </strong>Software components that manage the allocation of system resources, such as CPU time and memory, to processes and tasks running on the system.</li>
+        <li><strong>Utilities:</strong> Software tools or programs that perform specific tasks or functions that are useful for users or system administrators.</li>
+        <li><strong>Assembly language:</strong> A low-level programming language that uses mnemonics and symbols to represent machine instructions and memory addresses.</li>
+    </ol>
+    <h3>Functions of an Operating System</h3>
+    <ol>
+        <li>Resource Management: The Operating System manages the computer hardware resources and allocates them to the different applications and processes running on the system.</li>
+        <li>Process Management: The Operating System manages the creation, execution, and termination of processes and threads running on the system, ensuring that each process gets the necessary resources to execute and that the processes do not interfere with each other.</li>
+        <li>Memory Management: The Operating System manages the computer's memory resources, allocating memory to applications and processes, and freeing memory when it is no longer needed.</li>
+        <li>Security: The Operating System provides security mechanisms such as user authentication, access control, and data encryption to protect the system and its data from unauthorized access, malicious attacks, and viruses.</li>
+        <li>User Interface: The Operating System provides a user interface that enables users to interact with the computer and control its behavior.</li>
+    </ol>
+    <table>
+        <tr>
+            <th>Quantity in Bytes</th>
+            <th>Base-10 Value</th>
+            <th>Amount of Textual Information</th>
+        </tr>
+        <tr>
+            <td>1 byte</td>
+            <td>10<sup>0</sup></td>
+            <td>one character</td>
+        </tr>
+        <tr>
+            <td>1 kilobyte</td>
+            <td>10<sup>3</sup></td>
+            <td>One typed page</td>
+        </tr>
+        <tr>
+            <td>1 megabyte</td>
+            <td>10<sup>6</sup></td>
+            <td>Two or three novels</td>
+        </tr>
+        <tr>
+            <td>1 gigabyte</td>
+            <td>10<sup>9</sup></td>
+            <td>A departmental library or a large personal library</td>
+        </tr>
+        <tr>
+            <td>1 terabyte</td>
+            <td>10<sup>12</sup></td>
+            <td>The library of a major academic research university</td>
+        </tr>
+        <tr>
+            <td>1 petabyte</td>
+            <td>10<sup>15</sup></td>
+            <td>All printed material in all libraries in North America</td>
+        </tr>
+        <tr>
+            <td>1 exabyte</td>
+            <td>10<sup>18</sup></td>
+            <td>All words ever printed throughout human history</td>
+        </tr>
+        <tr>
+            <td>1 zettabyte</td>
+            <td>10<sup>21</sup></td>
+            <td>As of 2014, the total amount of information stored globally on the World Wide Web was about 4–5 zettabytes</td>
+        </tr>
+        <tr>
+            <td>1 yottabyte</td>
+            <td>10<sup>24</sup></td>
+            <td>According to an article in Gizmodo,1 a design and technology blog, storing 1 yottabyte of data on hard drives would require 1 million data centers that would fill the states of Rhode Island and Delaware</td>
+        </tr>
+    </table>
+</body>
+</html>
