@@ -1,0 +1,106 @@
+﻿/* Set the font family and size for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #606C38;
+    color: #FEFAE0;
+}
+
+/* Set the background color and padding for the header */
+header {
+    background-color: #283618;
+    padding: 20px;
+    color: #FEFAE0;
+    text-align:center;
+}
+
+    /* Style the header text */
+    header h1 {
+        font-size: 36px;
+        margin: 0;
+        text-align: center;
+    }
+
+/* Style the navigation links */
+nav {
+    background-color: #4b5842;
+    padding: 10px;
+    text-align: center;
+    color: #283618;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #FEFAE0;
+    }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+/* Style the main content section */
+main {
+    padding: 20px;
+}
+
+/* Style the section headings */
+div h3 {
+    font-size: 24px;
+    color: #283618;
+}
+/* Style the footer */
+footer {
+    background-color: #4b5842;
+    color: #FEFAE0;
+    padding: 10px;
+    text-align: center;
+}
+/* Style the image */
+img {
+    height: 363px;
+    width: 500px;
+    align-content: center;
+}
+/* Table style */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #283618;
+    font-weight: bold;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+a {
+    color: #0077c2;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
