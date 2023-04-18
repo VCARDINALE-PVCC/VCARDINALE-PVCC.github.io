@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<!--
+    
+NAME: CARDINALE
+DESCRIPTION: This code will find the cost of a beach cottage rental
+    
+-->
+<head>
+    <title>Summer Breeze Beach Cottage Rentals</title>
+<script type="text/javascript">
+    function beacrental() {
+        //rates variables
+        var pricepernight = 250.00;
+        var salestaxrate = 0.08;
+        var occtaxrate = 0.12;
+        var howtopay = "\n\nCredit and debit cards accepted for beach cottage rentals.";
+
+        //data variables
+        var numnights = 0;
+        var rentalcost = 0;
+        var salestaxamount = 0;
+        var occtaxamount = 0;
+        var total = 0;
+
+        //calculations
+        numnights = prompt("Enter the number of nu=ights you would like to rent a \nSUMMER BREEEZE beach cottage:");
+        rentalcost = numnights * pricepernight;
+        salestaxamount = rentalcost * salestaxrate;
+        occtaxamount = rentalcost * occtaxrate;
+        total = rentalcost + salestaxamount;
+
+        alert(
+            "\nSUMMER BREEZE BEACH COTTAGES" +
+            "\n------------------------------------------------" +
+            "\nNumber of nughts:" + numnights +
+            "\n------------------------------------------------" +
+            "\nRental cost:   $" + rentalcost +
+            "\nSales tax:     $" + salestaxamount +
+            "\nOccupancy tax: $" + occtaxamount +
+            "\n------------------------------------------------" +
+            "\nTotal:         $" + total + howtopay);
+        document.write("<h1>Total:" + total + "</h1>");          
+    }
+</script>
+</head>
+<body style="color:#117cad; background-color:#f2ebd0; font-family: Verdana, Arial, sans-serif; font-size:15px;">
+    <h1>SUMMER BREEZE BEACH COTTAGES</h1>
+    <h3>
+        Enjoy a beautiful, relaxing holiday in one of our cottages! </br>
+        Call us at 800.457.9876 for reservations.
+    </h3>
+    <form>
+        <input type="button" value="Click to calculate beach cottage rental cost" class="button" onclick="beachrental()"/>
+    </form>
+    <br /><br/>
+    <img src="cottage.jpg" />
+</body>
+</html>
