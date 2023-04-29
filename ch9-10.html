@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #1a090d;
+            background-color: #c0dfa1;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #465362;
+            color: #ace894;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: #9fc490;
+        }
+
+        ol {
+            list-style: decimal;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #a8ba9a;
+            color: #1a090d;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #888;
+        }
+
+        ol ol {
+            list-style: lower-alpha;
+            margin-left: 2rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: #a8ba9a;
+            color: #f2cfbf;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #011936;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #465362;
+        }
+
+        tr:hover {
+            background-color: #82a3a1;
+        }
+    </style>
+    <title>Chapter 9-10:</title>
+</head>
+<body>
+
+    <h1>Chapter 9: Introduction to High Level Languages</h1>
+
+    <h3>List four disadvantages of using assembly language:</h3>
+    <ol>
+        <li>Complexity: Assembly language is a low-level language that requires a deep understanding of computer architecture and hardware. This makes it more difficult to learn and use than higher-level programming languages.</li>
+        <li>Debugging: Debugging code written in assembly language can be challenging because errors in the code can be difficult to locate and fix. This is because assembly language provides very little abstraction over the hardware, which means that even minor errors can have significant consequences.</li>
+        <li>Portability: Assembly language is highly dependent on the specific hardware it is written for. Code written in assembly language for one processor or computer architecture will not necessarily work on another processor or architecture without significant modifications. This makes it less portable than higher-level programming languages.</li>
+        <li>Maintenance: Because assembly language is so low-level, programs written in assembly language tend to be more difficult to maintain than programs written in higher-level programming languages. This is because changes to the hardware or software environment may require significant modifications to the code, which can be time-consuming and error-prone.</li>
+    </ol>
+    <h3>List of Expectations for High-Level Programming Languages</h3>
+    <ul>
+        <li>Abstraction: High-level programming languages provide a high degree of abstraction, which means that programmers can focus on solving problems without needing to understand the low-level details of the hardware or computer architecture.</li>
+        <li>Productivity: High-level programming languages allow programmers to write code more quickly and efficiently than in low-level languages like assembly language. This is because high-level languages provide more built-in functionality and require less code to perform the same tasks.</li>
+        <li>Portability: Programs written in high-level programming languages are generally more portable than programs written in low-level languages. This is because high-level languages provide more abstraction over the hardware, making it easier to write code that can run on different architectures or platforms.</li>
+        <li>Readability and maintainability: High-level programming languages are designed to be more readable and maintainable than low-level languages. This is because high-level languages provide more expressive syntax and built-in features, making it easier to write code that is easy to understand and modify over time.</li>
+    </ul>
+    <table>
+        <thead>Briefly describe or define:</thead>
+        <tr>
+            <th>Term</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Object code</td>
+            <td>Machine-readable code generated by a compiler or assembler from source code, consisting of binary code that can be executed directly by the computer's CPU.</td>
+        </tr>
+        <tr>
+            <td>Source code</td>
+            <td>The human-readable version of a program written in a programming language, containing the instructions and logic that define the behavior of the program.</td>
+        </tr>
+        <tr>
+            <td>Procedural language</td>
+            <td>A programming language that follows a sequence of steps or procedures to execute a program, using procedures or functions to modularize the code.</td>
+        </tr>
+        <tr>
+            <td>Integrated Development Environment (IDE)</td>
+            <td>A software application that provides tools and features to facilitate software development, typically including a code editor, debugger, compiler, and other development tools in a single interface.</td>
+        </tr>
+        <tr>
+            <td>Software development life cycle</td>
+            <td>The process used to plan, design, develop, test, and deploy software applications, consisting of several phases that involve different teams and stakeholders.</td>
+        </tr>
+        <tr>
+            <td>Waterfall model of software development</td>
+            <td>A linear approach to software development where each phase of the SDLC is completed sequentially, and each phase must be completed before moving to the next one.</td>
+        </tr>
+        <tr>
+            <td>Agile model of software development</td>
+            <td>An iterative approach to software development that emphasizes collaboration, flexibility, and adaptability, involving breaking the project into smaller, manageable chunks and delivering working software in short iterations.</td>
+        </tr>
+    </table>
+    <table>
+        <thead>Describe each of these components of the software development life cycle: </thead>
+        <tr>
+            <th>Component</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Feasibility study</td>
+            <td>In the feasibility study phase of the software development life cycle, the project team evaluates the feasibility of the proposed project. This includes analyzing the project's technical, economic, legal, and operational aspects to determine whether the project is viable and should proceed.</td>
+        </tr>
+        <tr>
+            <td>Problem specification</td>
+            <td>In the problem specification phase, the project team works with stakeholders to define the requirements and scope of the project. This includes identifying the problem the software will solve, determining the users' needs, and specifying the system's functional and non-functional requirements.</td>
+        </tr>
+        <tr>
+            <td>Program design</td>
+            <td>In the program design phase, the project team creates the program's overall design, including its architecture, data structures, and algorithms. This phase involves transforming the problem specification into a detailed design that can be implemented by the developers.</td>
+        </tr>
+        <tr>
+            <td>Algorithm selection</td>
+            <td>In the algorithm selection phase, the project team selects the appropriate algorithms and data structures to implement the program's functionality. This involves evaluating different options and selecting the most appropriate approach based on factors such as efficiency, scalability, and maintainability.</td>
+        </tr>
+        <tr>
+            <td>Coding</td>
+            <td>In the coding phase, the developers write the program's code using the chosen programming language and tools. This involves translating the program design into executable code and writing clear, readable, and maintainable code.</td>
+        </tr>
+        <tr>
+            <td>Debugging</td>
+            <td>In the debugging phase, the developers test and debug the code to identify and fix errors, bugs, and other issues. This involves using debugging tools and techniques to diagnose and resolve issues and ensure that the code performs as expected.</td>
+        </tr>
+        <tr>
+            <td>Testing</td>
+            <td>In the testing phase, the developers test the program's functionality to ensure that it meets the requirements and works as intended. This involves writing and running test cases, analyzing the results, and fixing any issues that arise.</td>
+        </tr>
+        <tr>
+            <td>Verification</td>
+            <td>In the verification phase, the program is reviewed and evaluated to ensure that it meets the project requirements and specifications. This involves checking the program's functionality, performance, security, and usability to ensure that it is fit for purpose.</td>
+        </tr>
+        <tr>
+            <td>Documentation</td>
+            <td>In the documentation phase, the project team creates documentation to support the program's development and use. This includes creating user manuals, technical documentation, and other materials to help users and developers understand the program's functionality and design.</td>
+        </tr>
+    </table>
+    <h1>Chapter 10: Tower of Babel: Programming Languages</h1>
+    <h3>Questions & Answers:</h3>
+    <ol>
+        <li>
+            <p>Q: Why does the textbook refer to "the Tower of Babel" regarding computer languages?</p>
+            <p>A: The term "Tower of Babel" is used in the textbook to refer to the proliferation of computer languages and the resulting difficulty of communication between programs written in different languages, similar to the biblical story in which people spoke different languages and could not understand each other.</p>
+        </li>
+        <li>
+            <p>Q: Why isn't there just one computer programming language?</p>
+            <p>A: There isn't just one computer programming language because different programming languages are designed for different purposes and have different strengths and weaknesses. Additionally, as technology evolves and new needs arise, new programming languages are developed to meet those needs.</p>
+        </li>
+        <li>
+            <p>Q: Why didn't FORTRAN use the less than (<) symbol when comparing two numbers?</p>
+            <p>A: FORTRAN did not use the less than symbol for comparing two numbers because it was designed to work with early IBM computers that used punched cards for input. The less than symbol was not included on the standard set of punched cards, so FORTRAN used other symbols to represent less than (<) and greater than (>) comparisons.</p>
+        </li>
+        <li>
+            <p>Q: What was COBOL designed for?</p>
+            <p>A: COBOL (Common Business Oriented Language) was designed for business applications such as accounting, payroll, and inventory management. It was intended to be easily readable and written by non-technical business users.</p>
+        </li>
+        <li>
+            <p>Q: What was the language, C, designed for?</p>
+            <p>A: C was originally designed as a systems programming language for the development of the UNIX operating system. It is known for its efficiency, flexibility, and low-level control over computer hardware.</p>
+        </li>
+        <li>
+            <p>Q: What is the difference between C and C++?</p>
+            <p>A: C++ is an extension of the C programming language that adds support for object-oriented programming (OOP) features such as classes, inheritance, and polymorphism. C++ also includes additional features such as templates and exception handling that are not part of the C language.</p>
+        </li>
+        <li>
+            <p>Q: Who or what is the language, Ada, named for and why?</p>
+            <p>A: Ada is named after Ada Lovelace, a 19th-century mathematician who is considered to be the first computer programmer for her work on Charles Babbage's Analytical Engine. The language was named in her honor to recognize her contribution to the field of computing.</p>
+        </li>
+        <li>
+            <p>Q: What is a Java "applet"?</p>
+            <p>A: A Java applet is a small program written in the Java programming language that can be embedded within a web page to provide interactive content. Applets are executed within a web browser's Java Virtual Machine (JVM) and can be used to create animations, games, and other interactive applications.</p>
+        </li>
+        <li>
+            <p>Q: How much does Python cost to download, install, and use?</p>
+            <p>A: Python is a free and open-source programming language, so it can be downloaded, installed, and used for free.</p>
+        </li>
+        <li>
+            <p>Q: What is Microsoft.NET?</p>
+            <p>A: Microsoft.NET is a software framework developed by Microsoft that supports the development and execution of applications for Windows, as well as other platforms such as web applications, mobile devices, and gaming consoles. It includes a set of programming languages, runtime environments, and development tools.</p>
+        </li>
+        <li>
+            <p>Q: What is SQL and what is it used for?</p>
+            <p>A: SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases. It is used to create and modify database structures, as well as insert, update, and retrieve data from databases.</p>
+        </li>
+        <li>
+            <p>Q: What is Go (or golang) and what is it used for?</p>
+            <p>A: Go, also known as Golang, is a programming language developed by Google in 2007. It is designed to be fast, efficient, and easy to read and write, with a focus on concurrency and scalability. Go is often used for building network servers, web applications, and command-line tools.</p>
+        </li>
+        <li>
+            <p>Q: What is Swift and what is it used for?</p>
+            <p>A: Swift is a programming language developed by Apple in 2014. It is used for developing applications for Apple's platforms, including iOS, macOS, watchOS, and tvOS. Swift is designed to be easy to learn, with a simple syntax and a focus on safety and performance. It is often used for building mobile apps, desktop applications, and server-side applications.</p>
+        </li>
+    </ol>
+    <h3>Briefly describe each of the following alternative programming paradigms</h3>
+    <ul>
+        <li>Functional programming is a programming paradigm that emphasizes pure functions, immutability, higher-order functions, and recursion.</li>
+        <li>Logic programming is a programming paradigm that uses symbolic logic to express program statements.</li>
+        <li>Parallel programming is a programming paradigm that involves using multiple processors or cores to execute program code simultaneously for faster and more efficient program execution.</li>
+    </ul>
+    <h3>Programming language comparison:</h3>
+    <ol>
+        <li>What are the five programming languages used? The programming languages used are Ada, C++, C#, Java, and Python.</li>
+        <li>
+            How are comments created in each language?
+            <ul>
+                <li>In Ada, comments are created using "--".</li>
+                <li>In C++, comments can be created using "//" or "/* /".</li>
+                <li>In C#, comments are created using "//" or "/ /".</li>
+                <li>In Java, comments can be created using "//" or "/ */".</li>
+                <li>In Python, comments are created using "#" or "'''."
+            </ul>
+        </li>
+        <li>
+            What statement is used to get input from the user?
+            <ul>
+                <li>In Ada, input is obtained using the "INT_IO.GET" statement.</li>
+                <li>In C++, input can be obtained using "cin".</li>
+                <li>In C#, input can be obtained using "Console.ReadLine()".</li>
+                <li>In Java, input can be obtained using "Scanner".</li>
+                <li>In Python, input can be obtained using the "input()" function.</li>
+            </ul>
+        </li>
+        <li>
+            What statement is used to increase the number by 1?
+            <ul>
+                <li>In Ada, the number can be increased by 1 using the "n:=n+1" statement.</li>
+                <li>In C++, the number can be increased by 1 using the "++" operator.</li>
+                <li>In C#, the number can be increased by 1 using the "++" operator.</li>
+                <li>In Java, the number can be increased by 1 using the "++" operator.</li>
+                <li>In Python, the number can be increased by 1 using the "+=" operator.</li>
+            </ul>
+        </li>
+        <li>
+            What statement is used to display output to the user?
+            <ul>
+                <li>In Ada, output is displayed using the "TEXT_IO.PUT" statement.</li>
+                <li>In C++, output can be displayed using "cout".</li>
+                <li>In C#, output can be displayed using "Console.WriteLine()".</li>
+                <li>In Java, output can be displayed using "System.out.println()".</li>
+                <li>In Python, output can be displayed using the "print()" function.</li>
+            </ul>
+        </li>
+    </ol>
+    <table>
+        <th colspan="4">Computer Programming Language Comparisons</th>
+        <tr>
+            <th>Language</th>
+            <th>Comments</th>
+            <th>Input statement(s)</th>
+            <th>Increase by 1</th>
+            <th>Output statement</th>
+        </tr>
+        <tr>
+            <td>Ada</td>
+            <td>--</td>
+            <td>TEXT_IO.PUT</td>
+            <td>n:=n+1;</td>
+            <td>TEXT_IO.PUT</td>
+        </tr>
+        <tr>
+            <td>C++</td>
+            <td>// or /*</td>
+            <td>cin >> variable_name;</td>
+            <td>variable_name++;</td>
+            <td>cout << variable_name;</td>
+        </tr>
+        <tr>
+            <td>C#</td>
+            <td>// or / /</td>
+            <td>Console.ReadLine();</td>
+            <td>variable_name++;</td>
+            <td>Console.WriteLine(variable_name);</td>
+        </tr>
+        <tr>
+            <td>Java</td>
+            <td>Uses Scanner class</td>
+            <td>new Scanner(System.in);</td>
+            <td>variable_name++;</td>
+            <td>System.out.println(variable_name);</td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>#</td>
+            <td>input();</td>
+            <td>variable_name += 1</td>
+            <td>print(variable_name)</td>
+        </tr>
+    </table>
+    <h3><a href="https://stackoverflow.co/">Stack Overflow</a> Q & A</h3>
+    <ul>
+        <li>
+            <p>Q: What is the purpose of Stack Overflow?</p>
+            <p>A: Stack Overflow is a community-driven question-and-answer website that is used primarily by programmers to ask and answer technical programming questions. Its purpose is to provide a platform for developers to collaborate, share knowledge, and help each other solve programming problems.</p>
+        </li>
+        <li>
+            <p>Q: How to make background-color transparent in CSS?</p>
+            <p>A: background-color: rgba(255, 255, 255, 0.5);</p>
+        </li>
+    </ul>
+    <h3>Stack Overflow Ask:</h3>
+    <ul>
+        <li>
+            <p>Q: What should a Stack Overflow question title do?</p>
+            <p>A: A Stack Overflow question title should clearly and concisely summarize the problem or question being asked, using specific and relevant keywords.</p>
+        </li>
+        <li>
+            <p>Q: What are the steps to writing a good Stack Overflow question?</p>
+            <p>
+                A: Research the problem: Before asking a question, try to research and solve the problem on your own using online resources and documentation.  <br />
+                Write a clear and specific question: Use clear and specific language to describe the problem or question, including any relevant code or error messages.   <br />
+                Avoid overly broad or vague questions.    <br />
+                Provide context: Explain the larger context of the problem, including any relevant background information or previous attempts to solve the problem. <br />
+                Use formatting: Use proper formatting, including code formatting, bullet points, and paragraphs to make the question easier to read and understand.  <br />
+                Be polite and professional: Show respect and gratitude to those who are helping, and avoid any negative or inflammatory language.<br />
+                Proofread and revise: Before submitting the question, proofread it for grammar, spelling, and clarity, and revise as necessary.;  <br />
+            </p>
+        </li>
+        <li>
+            <p>Q: How to make background-color transparent in CSS?</p>
+            <p>A: background-color: rgba(255, 255, 255, 0.5);</p>
+        </li>
+        <li>
+            <p>Q: How to make background-color transparent in CSS?</p>
+            <p>A: background-color: rgba(255, 255, 255, 0.5);</p>
+        </li>
+        <li>
+            <p>Q: How to make background-color transparent in CSS?</p>
+            <p>A: background-color: rgba(255, 255, 255, 0.5);</p>
+        </li>
+        <li>
+            <p>Q: How to make background-color transparent in CSS?</p>
+            <p>A: background-color: rgba(255, 255, 255, 0.5);</p>
+        </li>
+
+    </ul>
+    <h3><a href="https://insights.stackoverflow.com/survey/2021">Stack Overflow Programming Survey</a> Q & A</h3>
+    <ul>
+        <li>
+            <p>Q: How many people answered the 2021 survey?</p>
+            <p>A: 49,116 people</p>
+        </li>
+        <li>
+            <p>Q: What were the top three countries where responses came from?</p>
+            <p>A: USA, India, and Germany</p>
+        </li>
+        <li>
+            <p>Q: What was the age range of coders when they wrote their first line of code?</p>
+            <p>A: between 11 to 17 years old</p>
+        </li>
+        <li>
+            <p>Q: What were the three most popular ways of learning how to code?</p>
+            <p>A: Other online resources (videos, blogs, etc), School, Books/Physical media</p>
+        </li>
+        <li>
+            <p>Q: How long have most people been coding?</p>
+            <p>A: 10 years or less</p>
+        </li>
+        <li>
+            <p>Q: What percentage of coders identified as male?</p>
+            <p>A: 91.67%</p>
+        </li>
+        <li>
+            <p>Q: Your opinion: How can the IT community get more women in coding?</p>
+            <p>A: Creating an early interest in computer sciences while in elementary school and encouraging female children to take up STEM interests.</p>
+        </li>
+        <li>
+            <p>Q: What were the top three programming languages?</p>
+            <p>A: JavaScript, HTML/CSS, Python in that order</p>
+        </li>
+    </ul>
+
+</body>
+</html>
+
+
+
+
+
