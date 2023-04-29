@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #1a090d;
+            background-color: #c2dfe3;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #465362;
+            color: #e0fbfc;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: #9fc490;
+        }
+
+        ol {
+            list-style: decimal;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #9db4c0;
+            color: #1a090d;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #888;
+        }
+
+        ol ol {
+            list-style: lower-alpha;
+            margin-left: 2rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: #9db4c0;
+            color: #f2cfbf;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #011936;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #465362;
+        }
+
+        tr:hover {
+            background-color: #82a3a1;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+    <title>Chapter 12: Models of Computation</title>
+</head>
+<body>
+    <h1>Chapter 12: Models of Computation</h1>
+    <h2>1. What is the purpose of a model?</h2>
+    <p>The purpose of a model is to represent, simulate, or predict a real-world system, phenomenon, or process. Models can be used to better understand complex systems, make predictions, and test theories.</p>
+
+    <h2>2. List four phenomena of a model:</h2>
+    <ul>
+        <li>Abstraction: A model is a simplified representation of a complex system, phenomenon, or process. It involves reducing the number of variables, details, or interactions to focus on the most important aspects of the system.</li>
+        <li>Generalization: A model should be able to capture the essential features of the real-world system and be applicable to a wide range of scenarios, not just specific cases.</li>
+        <li>Approximation: A model is an approximation of reality and may not capture all the details of the system. Therefore, models should be evaluated based on their accuracy, reliability, and limitations.</li>
+        <li>Prediction: Models can be used to make predictions about future outcomes or behaviors of the system based on current knowledge and assumptions. However, the accuracy of these predictions depends on the quality of the model and the quality of the data used to parameterize the model.</li>
+    </ul>
+
+    <h2>3. List four things a computing agent should be able to do:</h2>
+    <ol>
+        <li>Receive input: A computing agent should be able to receive input from the user or from other sources such as sensors, databases, or networks.</li>
+        <li>Process data: A computing agent should be able to process and manipulate data according to the instructions provided in the program or algorithm.</li>
+        <li>Produce output: A computing agent should be able to produce output in the form of text, graphics, sound, or other forms based on the input and processing.</li>
+        <li>Store and retrieve data: A computing agent should be able to store data in memory or on disk and retrieve it as needed. This could include managing databases, files, or other data structures.</li>
+    </ol>
+
+    <h2>4. List four characteristics of an algorithm:</h2>
+    <ul>
+        <li>Well-defined: An algorithm must be well-defined, which means it must be clear, unambiguous, and complete. Each step of the algorithm should be precisely defined and capable of being executed.</li>
+        <li>Finite: An algorithm must be finite, which means it must terminate after a finite number of steps. This is important because an algorithm that never terminates is useless.</li>
+        <li>Input: An algorithm must have zero or more inputs. The inputs are the data that the algorithm processes to produce output.</li>
+        <li>Output: An algorithm must have at least one output. The output is the result of the algorithm's computation and can be in various forms, such as a number, a string, a list, or a graphic.</li>
+    </ul>
+
+    <h2>5. What is the "halting problem" with regards to an uncomputable problem?</h2>
+    <p>The halting problem is the problem of determining whether an algorithm will halt or run forever on a given input. It is uncomputable, meaning that there is no general algorithm that can solve it for all possible inputs. This shows that there are limits to what can be computed.</p>
+    <h1>Chapter 13: Simulation & Modeling</h1>
+    <table>
+        <thead>Briefly describe or define:</thead>
+        <tr>
+            <th>Term</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>1. Scientific method:</td>
+            <td>The scientific method is a systematic approach to acquiring knowledge that involves formulating hypotheses, testing them through observation and experimentation, analyzing the results, and drawing conclusions based on the evidence gathered.</td>
+        </tr>
+        <tr>
+            <td>2. Computational model:</td>
+            <td>A computational model is a mathematical or logical representation of a real-world system or process that can be simulated on a computer. It involves the use of algorithms, programming languages, and mathematical tools to create a virtual representation of the system or process.</td>
+        </tr>
+        <tr>
+            <td>3. Discrete event simulation:</td>
+            <td>Discrete event simulation is a type of simulation in which the system is modeled as a series of discrete events that occur at specific points in time. These events can include the arrival of customers, the processing of orders, or the occurrence of failures, among others.</td>
+        </tr>
+        <tr>
+            <td>4. Seven reasons to construct a simulation model:</td>
+            <td>
+                <ol>
+                    <li>Prediction: Simulation models can be used to predict the behavior of a system under different conditions or scenarios.</li>
+                    <li>Analysis: Simulation models can be used to analyze the performance of a system and identify areas for improvement.</li>
+                    <li>Design: Simulation models can be used to design and optimize new systems or processes before they are implemented in the real world.</li>
+                    <li>Training: Simulation models can be used for training purposes to help people learn how to operate or manage complex systems.</li>
+                    <li>Cost-effective: Simulation models can be a cost-effective way to test and evaluate different scenarios or designs without the need for expensive physical prototypes.</li>
+                    <li>Risk reduction: Simulation models can help reduce the risk of failure by identifying potential problems or issues before they occur in the real world.</li>
+                    <li>Visualization: Simulation models can provide a visual representation of complex systems or processes, which can help improve understanding and communication among stakeholders.</li>
+                </ol>
+            </td>
+        </tr>
+    </table>
+    <ul>
+        <li>
+            <strong>Illustris: "The Mother of All Computations"</strong>
+            <ul>
+                <li><strong>What is Illustris?</strong> Illustris is a state-of-the-art computational model of the universe that simulates the evolution of galaxies, stars, and dark matter over billions of years.</li>
+                <li><strong>What fields of science were involved in the Illustris computational model?</strong> The fields of astrophysics, cosmology, and computer science were involved in the development and implementation of the Illustris computational model.</li>
+                <li><strong>What does Illustris simulate?</strong> Illustris simulates the formation and evolution of galaxies, stars, and dark matter over a period of 13.8 billion years, starting from just 12 million years after the Big Bang.</li>
+                <li><strong>How long did the project take?</strong> The project took over five years to complete, from 2009 to 2014.</li>
+                <li><strong>How many years of gallactic evolution are simulated in Illustris?</strong> Illustris simulates the evolution of galaxies over a period of 13.8 billion years, which corresponds to the entire history of the universe since the Big Bang.</li>
+                <li><strong>Illustris was created using two supercomputers. What is a supercomputer?</strong> A supercomputer is a type of computer that is specially designed to perform complex calculations and simulations at a much faster rate than traditional computers. Supercomputers are used in a variety of fields, including scientific research, weather forecasting, and financial modeling. They typically consist of multiple processors, large amounts of memory, and high-speed networking capabilities, and can cost millions of dollars to build and maintain.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <iframe width="453" height="285" src="https://www.youtube.com/embed/NjSFR40SY58" title="Illustris Simulation: Most detailed simulation of our Universe" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
