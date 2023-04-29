@@ -1,0 +1,240 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #1a090d;
+            background-color: #ace894;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #6b6570;
+            color: #ace894;
+        }
+
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            background-color: #ffb4a2;
+        }
+
+        ol {
+            list-style: decimal;
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+            background-color: #a8ba9a;
+            color: #1a090d;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+
+
+        h1,
+        h2,
+        h3 {
+            text-align: center;
+        }
+
+        h2 {
+            color: #888;
+        }
+
+        ol ol {
+            list-style: lower-alpha;
+            margin-left: 2rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            background-color: #a8ba9a;
+            color: #f2cfbf;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4a314d;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #6b6570;
+        }
+
+        tr:hover {
+            background-color: #faa275;
+        }
+    </style>
+    <title>Chapter 8: Information Security</title>
+</head>
+<body>
+    <h1>Chapter 8: Information Security</h1>
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Information security</td>
+            <td>Practice of safeguarding digital information from unauthorized access, use, disclosure, disruption, modification, or destruction.</td>
+        </tr>
+        <tr>
+            <td>Authentication</td>
+            <td>Process of verifying the identity of an entity (such as a person or a device) to establish trust and grant access to resources.</td>
+        </tr>
+        <tr>
+            <td>Authorization</td>
+            <td>Process of granting or denying access to resources based on the authenticated identity and the permissions assigned to that identity.</td>
+        </tr>
+        <tr>
+            <td>Dual authentication (two-factor authentication)</td>
+            <td>Security mechanism requiring two different forms of authentication to access a resource.</td>
+        </tr>
+        <tr>
+            <td>Social engineering</td>
+            <td>Use of psychological manipulation to trick people into divulging sensitive information or performing actions that are not in their best interest.</td>
+        </tr>
+        <tr>
+            <td>Virus</td>
+            <td>Type of malware that replicates itself and infects other computer programs, data files, or the boot sector of a hard drive.</td>
+        </tr>
+        <tr>
+            <td>Worm</td>
+            <td>Type of malware that spreads itself over a network by exploiting vulnerabilities in operating systems or other software.</td>
+        </tr>
+        <tr>
+            <td>Trojan horse/Trojan</td>
+            <td>Type of malware that disguises itself as a legitimate program to trick users into installing and running it, allowing attackers to gain unauthorized access to the affected system.</td>
+        </tr>
+        <tr>
+            <td>Ransomware</td>
+            <td>Type of malware that encrypts the victim's files and demands payment (usually in cryptocurrency) in exchange for the decryption key.</td>
+        </tr>
+        <tr>
+            <td>Phishing</td>
+            <td>Type of social engineering attack that uses fraudulent emails, websites, or messages to trick users into divulging sensitive information or performing actions that are not in their best interest.</td>
+        </tr>
+        <tr>
+            <td>White Hat</td>
+            <td>Ethical hacker who identifies and fixes security vulnerabilities in computer systems and networks.</td>
+        </tr>
+        <tr>
+            <td>Black Hat</td>
+            <td>Hacker who uses their skills and knowledge for illegal or unethical purposes, such as stealing sensitive data, disrupting services, or causing damage to computer systems and networks.</td>
+        </tr>
+        <tr>
+            <td>Encryption/Decryption</td>
+            <td>Process of transforming plaintext (unencrypted) data into ciphertext (encrypted) data using a mathematical algorithm and a secret key. Decryption is the reverse process of transforming ciphertext back into plaintext using the same algorithm and key.</td>
+        </tr>
+        <tr>
+            <th>Cryptography</th>
+            <td>Study and practice of techniques for secure communication in the presence of third parties (such as attackers or eavesdroppers).</td>
+        </tr>
+        <tr>
+            <th>Symmetric encryption algorithm</th>
+            <td>Type of cryptographic algorithm that uses the same secret key for both encryption and decryption of data. Examples include Advanced Encryption Standard (AES) and Data Encryption Standard (DES).</td>
+        </tr>
+        <tr>
+            <th>Caesar cipher</th>
+            <td>Simple substitution cipher technique that shifts each letter in the plaintext by a fixed number of positions down the alphabet.</td>
+        </tr>
+        <tr>
+            <th>Block cipher</th>
+            <td>Type of symmetric encryption algorithm that breaks plaintext into fixed-length blocks and applies a cryptographic transformation to each block using a secret key.</td>
+        </tr>
+        <tr>
+            <th>Data Encryption Standard (DES)</th>
+            <td>Widely used symmetric key encryption algorithm developed by IBM in the 1970s that uses a 56-bit key to encrypt plaintext.</td>
+        </tr>
+        <tr>
+            <th>Public key system</th>
+            <td>Encryption system that uses a pair of mathematically related keys, one private and one public, for secure communication. The private key is kept secret, while the public key is widely distributed.</td>
+        </tr>
+        <tr>
+            <th>Embedded computers</th>
+            <td>Computers that are part of a larger system or device and are designed for a specific function or task. Examples include microcontrollers in appliances, cars, and medical devices.</td>
+        </tr>
+    </table>
+ 
+    <h2>How a text file can be hidden in a steganographic image:</h2>
+    <p>
+        A text file can be hidden in a steganographic image by manipulating the least significant bit of each pixel to store the text data.
+        This can be done by replacing the least significant bit of the color values in the image with the binary digits of the text file.
+        By doing this, the image will still appear unchanged to the human eye, but the hidden text can be extracted using steganography tools.
+    </p>
+
+    <h2>Six ways to protect yourself from most cyber attacks:</h2>
+    <ol>
+        <li>Keep your operating system and software up to date with the latest security patches and updates.</li>
+        <li>Use strong and unique passwords for all your online accounts, and enable two-factor authentication whenever possible.</li>
+        <li>Be cautious when clicking on links or downloading attachments from unknown or suspicious sources, and use anti-virus and anti-malware software to protect your devices.</li>
+        <li>Use a virtual private network (VPN) when accessing the internet on public Wi-Fi networks or when traveling to protect your online activities from prying eyes.</li>
+        <li>Back up your important data regularly to protect against data loss from cyber attacks or other disasters.</li>
+        <li>Educate yourself about common cyber threats and how to protect against them, and practice good cyber hygiene habits such as avoiding oversharing personal information online.</li>
+    </ol>
+    <h2><a href="https://brackets.io/">Brackets:</a></h2>
+    <ol>
+        <li>What is Brackets?</li>
+        <p>Brackets is a free, open-source text editor designed specifically for web development. It was created by Adobe and is now maintained by the Brackets community.</p>
+        <li>How much does it cost?</li>
+        <p>Brackets is completely free to download and use.</p>
+        <li>Describe several extensions you can download to enhance Brackets:</li>
+        <ul>
+            <li>Emmet: A tool for writing HTML and CSS code faster and more efficiently.</li>
+            <li>Beautify: An extension that automatically formats code to make it easier to read and follow.</li>
+            <li>Brackets Git: An extension that allows users to manage Git repositories and perform Git operations within Brackets.</li>
+        </ul>
+    </ol>
+
+    <h2> <a href="https://highschool.spsd.org/crypt/index.html">Play the Crypt Games:</a></h2>
+    <ol>
+        <li>Easy ciphers game:</li>
+        <p>PIG PEN: a substitution cipher between symbols and letters very easy and intuitive - I would use to play with this cipher as a young child.</p>
+        <li>Normal ciphers game:</li>
+        <p>Rail Fence: a cipher that reveals the answer upon reading the correct way (in a snake-like motion) also very intuitive - would be very easy to teach young children.</p>
+        <li>Hard ciphers game:</li>
+        <p>VIGENERE: uses a grid and key phrase in combination to create coordinates to the correct letters very annoying - did not provide an example on page and instructions were not the clearest.</p>
+    </ol>
+
+    <h2>Your opinion:</h2>
+    <ol>
+        <li>What do you think of Christine McCarthy and her cipher games project?</li>
+        <p>Christine McCarthy's cipher games project is a website that provides interactive puzzles and challenges related to cryptography, aimed at engaging people and increasing their interest in the field. It is a creative and educational initiative that can help people learn about cryptography in a fun and engaging way at entry level.</p>
+        <li>Would you recommend this site to others who might be interested in cryptography?</li>
+        <p>It could be a helpful tool for learning and practicing cryptography skills. However, it is definitely at an entry-level on the subject.</p>
+        <li>What do you think of Christine’s code?</li>
+        <p>It is very simple yet gets the job done.</p>
+    </ol>
+
